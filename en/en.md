@@ -46,7 +46,7 @@ Combination of 3 factors
 
 - Concepts & models
 - Implementation process: Step-by-step activities to do
-- Support tools: Software to help (support) SAD
+- Support tools: sw to help (support) SAD
 
 ## OO modeling
 
@@ -85,7 +85,7 @@ Combination of 3 factors
 
 - Process: Steps to do, products (documents, models) to be produced at each phase, how to run process, how to evaluate quality
 
-- CASE (computer aided software engineering) tool: Support software for modeling process, capable of:
+- CASE (computer aided sw engineering) tool: Support sw for modeling process, capable of:
 
   - Producing models & diagrams
   - Quickly transforming & adjusting models & diagrams
@@ -156,7 +156,7 @@ Combination of 3 factors
 ### Implementation
 
 - Component View
-- View on release form of software
+- View on release form of sw
 - Shows relatively independent components & files that can be assembled to make sys run
 - Static models
   - Component diagram
@@ -231,1008 +231,351 @@ Combination of 3 factors
 
 # SDP
 
-- A structured (ordered) set of activities required to develop a software sys
+- A structured (ordered) set of activities required to develop a sw sys
   - Example: Waterfall, Prototyping, Spiral, etc.
   - Not exist a single ideal SDP process suitable for all practical problems & requirements
 
-Select a suitable SDP
-
-Type of software sys to be built
-
-Build sys from scratch >< Upgrade, update from an
-existing sys
-Common (popular) >< Customized or unique
-Defined software requirements >< Software requirements change
-(quickly)
-Critical sys >< Business sys
-
-Size of software dev project, Size of the
-dev team, Project implementation time
-Characteristics of software dev team
-
-Experience, Motivation (+ encouragement), Work attitude (effort)
-
-Budget of software dev project
-SAD
-
-5
-
-Main activities of an SDP
-
-Feasibility study
-
-Requirements analysis & specification
-
-Design
-
-Implementation
-
-Testing
-
-Deployment
-
-Maintenance
-
-SAD
-
-6
-
-Popularly used SDPs
-Waterfall model
-Prototyping model
-Spiral model
-
-Agile model
-Unified model
-
-SAD
-
-7
-
-Waterfall model
-Feasibility
-analysis
-Requirements analysis
-and specification
-
-Design
-
-Implementation
-(Programming) & Testing
-Deployment and
-Maintenance
-SAD
-
-8
-
-Waterfall model
-
-Introduced by Winston Royce in 1970, & is still most used model in
-software dev projects
-Software dev is based on a set of sequentially ordered phases
-
-Once SDP ends & software sys is
-handed over (signed off) to customer, software sys cannot be
-changed or adjusted
-
-The order of phases is deterministic, & results of a previous phase will
-be used as input for following ones
-
-The SDP can only be reopened (in response to
-adjustments/changes) through a formal change process
-
-The most important feature of Waterfall model: non-overlapping, nonrepeating phases (in a SDP)
-
-The Design phase cannot start before Analysis phase completes, & the
-Testing phase cannot start before Implementation phase completes
-
-SAD
-
-9
-
-Waterfall model
-
-Advantages
-Simple, easy to understand, & easy to use
-❖ documents are completed after each phase
-❖ Software requirements are provided early to testers
-❖ Allows project manager (PM) to easily plan & control execution
-❖ This process is also very well known & known even by non-professionalsoftware-dev persons, making it easy to use for communication
-❖
-
-Disadvantages
-Only suitable for real problems when software requirements are
-clearly defined, complete & fixed from beginning (before the
-Design phase)
-❖ Not suitable for long-running projects
-❖ Those projects that may have risk or uncertainty factors
-❖ Hard (or even impossible) to have initial results (versions) of software
-soon
-❖
-
-SAD
-
-10
-
-Waterfall model
-
-When to use?
-
-Software requirements are clearly defined, complete and
-fixed
-The definition of product (software sys) does not change
-The related & necessary technologies are mastered
-The resources & experience of software dev team
-are sufficient
-The time of project execution is short (not long)
-
-SAD
-
-11
-
-Prototyping model
-Requirements
-analysis
-Quick design
-
-Prototype building
-
-Prototype evaluation
-
-Design
-SAD
-
-12
-
-Prototyping model
-
-Instead of fixing requirements before proceeding with design or
-implementation (programming), a prototype (or several) is built to
-understand exact software requirements
-Each prototype is built upon current software requirements (obtained
-from evaluation of previous prototypes)
-By using prototypes, customers can get a “real feel” of software
-sys, because interactions with prototype allow customers to
-have a better, more precise understanding of requirements of
-the desired software sys
-Using prototypes is reasonable for dev of large and
-complex software syss (when there is no requirement gathering
-process or inbuilt sys to help define software requirements)
-A prototype is usually not a complete software sys, & many
-details are not implemented in prototype
-SAD
-
-13
-
-Prototyping model
-
-Advantages
-❖
-❖
-
-❖
-
-❖
-
-❖
-❖
-
-Users are actively involved in SDP
-Using a prototype as a working model of sys, users gain a better
-understanding of sys being built
-Errors, problems can be detected (very) early
-Early to get evaluation feedback from users for better software dev
-solutions
-Missing functions can be discovered early
-Functions that are unclear or difficult to operate may be detected
-
-Disadvantages
-❖
-
-❖
-
-❖
-❖
-
-Users may think that software dev is easy, & thus become
-inconsistent in expression of requirements
-Planning is not done at beginning of project, which may lead to project
-management problems: undefined deadlines, budgets & deliverables
-This prototyping model often leads to prolong SDP
-Developers tend to deliver a basic working prototype, rather than a real complete
-product
-SAD
-
-14
-
-Prototyping model
-
-When to use prototyping model?
-❖
-
-❖
-
-❖
-
-❖
-❖
-
-❖
-
-When software requirements cannot be determined at the
-time of project initiation
-When users (for various reasons) cannot express their
-requirements clearly
-This prototyping model is well suited for developing "look and
-feel" or user interface of sys, because these features are
-difficult to describe by documentation, but often obtained through
-trial use
-When customers ask for proof of feasibility
-When demos are needed for senior management board
-When technology problems need to be tried & tested
-
-SAD
-
-15
-
-Spiral model
-
-SAD
-
-16
-
-Spiral model
-
-Proposed by Barry Boehm
-An evolutionary dev model, based on a hybrid combination
-of iterative dev feature of Prototyping model and
-the sequential dev feature of Waterfall model
-Focus on risk analysis
-
-In spiral model, software sys is developed through a
-series of incremental releases
-In initial iterative steps of dev, versions of the
-software sys can be simply sketched models on paper or
-prototypes
-In later iterative dev steps, increasingly mature versions
-of software sys are created
-
-SAD
-
-17
-
-Spiral model
-
-Advantages
-❖ Focus on risk analysis, therefore help reduce risks in software
-dev projects
-❖ Suitable for large & particularly important projects
-❖ New functions may be added later
-❖ Initial versions of software sys are created early
-Disadvantages
-❖ High cost (time, resources, money) to apply
-❖ Risk analysis requires high skills & experience
-❖ success of project depends strongly on risk analysis
-phase
-❖ Not suitable for small projects
-SAD
-
-18
-
-Spiral model
-
-When to use spiral model?
-❖
-
-❖
-❖
-❖
-❖
-❖
-
-When assessment (analysis) of costs & risks is
-important
-For medium- to high-risk projects
-Users are uncertain about their needs
-Complex & large software requirements
-Need to develop a new product line
-Desire for significant changes (careful research & investigation
-is required)
-
-SAD
-
-19
-
-Agile model
-
-SAD
-
-20
-
-Agile model
-
-Is an incremental & iterative type of model
-The software sys is developed through incremental & rapid
-cycles
-Helps create small-scale enhanced versions (of software
-sys) where a next version is built on features of previous
-one
-Each enhanced version is carefully tested to ensure software quality
-Used for software dev projects that require quick
-completion times
-Extreme Programming (XP) is one of famous software
-dev methods belonging to agile model
-
-SAD
-
-21
-
-Agile model
-
-Advantages
-❖
-
-Satisfy customers with agile enhanced software versions
-
-❖
-
-Emphasis on interactions between actors rather than processes & tools (i.e.,
-customers, developers, & testers constantly interact with each other)
-
-❖
-
-Frequent communication between business analysis team & the
-programming team
-
-❖
-
-Adapt (response) quickly to changing requests
-
-❖
-
-Even allowing changes of software requirements are added later
-
-Disadvantages
-❖
-
-For large software syss, this agile model makes it difficult to estimate the
-necessary costs & effort at beginning of SDP
-
-❖
-
-Less emphasis on required design & documentation
-
-❖
-
-Usually only senior developers can make necessary decisions during
-dev (i.e., not suitable for inexperienced developers, unless working in
-conjunction with experienced ones)
-
-SAD
-
-22
-
-Agile model
-
-When to use agile model?
-❖
-
-❖
-
-❖
-
-❖
-
-New changes can be implemented at low cost, by frequent creation
-of enhanced versions
-To implement a new feature, developers only need a few days, or even a
-few hours to implement
-Unlike waterfall model, in agile model, planning is (much) less
-cost. agile model assumes that user needs will (often) change.
-Changes can always be requested, & features can always be
-added or removed based on customer feedback. This helps give
-customers software sys they need & want to use
-Both developers & users of sys find they have more freedom of
-time & choices than models that strictly follow a sequence of steps
-(e.g., waterfall model)
-
-SAD
-
-23
-
-Unified model
-Project-management view
-Formulation
-
-Implementation
-
-Problem solving
-
-Problem
-
-Inception
-
-Solution
-
-Elaboration
-
-Construction
-
-Transition
-
-Time
-
-SAD
-
-24
-
-Unified model
-
-Technical view
-Iteration step
-
-Result (output)
-
-Time
-
-Preparation
-
-Maquette
-
-Architecture
-
-Architecture prototype
-
-Architecture
-
-Architecture prototype
-
-Implementation
-
-Implementation prototype
-
-Implementation
-
-Implementation prototype
-
-Implementation
-
-Version 
-
-Transition
-
-Version 
-
-Transition
-
-Final (official) version
-
-SAD
-
-25
-
-Unified model
-
-Combination of 2 views
-Iteration step
-
-Result (output)
-
-Time
-
-Preparation
-
-Maquette
-
-Architecture
-
-Architecture prototype
-
-Architecture
-
-Architecture prototype
-
-Implementation
-
-Implementation prototype
-
-Implementation
-
-Implementation prototype
-
-Implementation
-
-Version 
-
-Transition
-
-Version 
-
-Transition
-
-Final (official) version
-SAD
-
-Inception
-
-Elaboration
-
-Construction
-
-Transition
-
-26
-
-Unified model & UML
-
-SAD
-
-27
-
-RUP
-RUP (Rational Unified Process) is a modeling
-process using modeling language UML:
-Basic principles
-Main phases
-Main steps
-
-SAD
-
-28
-
-Basic principles (1)
-Iteration & incremental
-The project is divided into short loops or stages for
-easy control
-At end of each loop, executable part of the
-software sys is produced in a gradually added
-Focus on architecture
-The complex sys is divided into modules for easy
-deployment & maintenance
-This architecture is presented in 5 different views
-
-SAD
-
-29
-
-Basic principles (2)
-
-Led by use cases
-
-Use cases influence every phase of sys dev, are
-the basis for defining loops & enhancement, & are basis
-for dividing work within team
-Needs understanding: Detect use cases
-Analysis: Dive into description (i.e., specification) of use
-cases
-Design & implementation: Build sys according to the
-use cases
-sys testing & acceptance: Follow use cases
-
-Control risks
-
-Early detect & eliminate risks to software dev
-project
-SAD
-
-30
-
-Main phases of RUP (1)
-
-RUP is organized into 4 phases: Inception, Elaboration,
-Construction, & Transition
-
-SAD
-
-31
-
-Main phases of RUP (2)
-Inception
-
-Give an overview of software sys
-(functions, performance, technology, ...) & the
-software dev project (scope, goals,
-feasibility, etc.) => Make conclusion of whether to
-develop or give up project?
-
-Elaboration
-
-More detailed analysis of sys (functions
-and static structures)
-Propose a sys architecture prototype
-
-SAD
-
-32
-
-Main phases of RUP (3)
-Construction
-
-Focus on sys design & implementation
-The sys architecture is detailed & edited
-Finishes when a complete sys with
-accompanying technical documentation is created
-This is phase that takes most time and
-effort
-
-Transition
-
-Transfer sys to end users: data
-conversion, installation, testing, training, etc.
-SAD
-
-33
-
-Main steps of RUP (1) 2. Identify
-and
-describe
-the use
-cases
-
-1.Preliminary
-study
-
-2.Application
-domain
-modeling
-
-Inception
-
-7. Create
-   user
-   interface
-   prototype
-
-8. Define
-   classes/
-   objects
-   involving in
-   use
-   cases
-
-9. Modeling
-   interactions
-   in use
-   cases
-
-10. Detailed
-    design
-
-11. Implem
-    entation
-
-12. Design
-    sys
-    architecture
-
-13. Behavior
-    modeling
-
-Elaboration
-
-SAD
-
-Construction & Transition
-
-34
-
-Main steps of RUP (2)
+### Select suitable SDP
+
+- Type of sw sys to be built
+  - Build sys from scratch >< Upgrade, update from an existing sys
+  - Common (popular) >< Customized or unique
+  - Defined sw requirements >< sw requirements change (quickly)
+  - Critical sys >< Business sys
+- Size of
+  - sw dev pj
+  - dev team
+- pj implementation time
+- Characteristics of sw dev team
+  - Experience
+  - Motivation (encouragement)
+  - Work attitude (effort)
+- Budget of sw dev pj
+
+### Main activities
+
+- Feasibility study
+- Requirements analysis & specification
+- Design
+- Implementation
+- Testing
+- Deployment
+- Maintenance
+
+## Waterfall
+
+- Phases
+
+  - Feasibility analysis
+  - Requirements analysis & specification
+  - Design
+  - Implementation (Programming) & Testing
+  - Deployment & Maintenance
+
+- Model
+
+  - Most used
+  - Based on a set of sequentially ordered phases
+  - Once SDP ends & sw sys is handed over (signed off) to customer, sw sys cannot be changed or adjusted
+    - order of phases is deterministic & results of a previous phase will be used as input for following ones
+  - SDP can only be reopened (in response to adjustments/changes) through a formal change process
+  - Non-overlapping, non-repeating phases
+
+- Advan & disadvan
+
+  - Advantages
+    - Simple, easy to understand & use
+    - documents are completed after each phase
+    - sw requirements are provided early to testers
+    - Allows PM to easily plan & control execution
+    - Well known by non-professional, easy to use for communication
+  - Disadvantages
+    - Only suitable for real problems when sw requirements are clearly defined, complete & fixed from beginning (before Design phase)
+    - Not suitable for long-running pjs
+    - Those pjs that may have risk or uncertainty factors
+    - Hard to have initial results (versions) soon
+
+- When to use
+
+  - sw requirements are clearly defined, complete & fixed
+  - definition of product (sw sys) does not change
+  - related & necessary technologies are mastered
+  - resources & experience of sw dev team are sufficient
+  - time of pj execution is short
+
+## Prototyping model
+
+- Phases
+  - Requirements
+  - analysis
+  - Quick design
+  - Prototype building
+  - Prototype evaluation
+  - Design
+- Model
+
+  - Instead of fixing requirements before proceeding with design or implementation, a prototype is built to understand exact sw requirements
+  - Each prototype is built upon current sw requirements (obtained
+  - from evaluation of previous prototypes)
+  - By using prototypes, customers can get real feel
+    - because interactions with prototype allow customers to have a better, more precise understanding of requirements
+  - Using prototypes is reasonable for dev of large & complex sw sys
+    - when there is no requirement gathering process or inbuilt sys to help define sw requirements
+  - A prototype is usually not a complete sw sys & many details are not implemented
+
+- Advan & disadvan
+
+  - Advantages
+    - Users are actively involved in SDP
+    - Using a prototype as a working model of sys, users gain a better understanding of sys being built
+    - Errors, problems can be detected early
+    - Early to get evaluation feedback from users for better solutions
+    - Missing functions can be discovered early
+    - Functions unclear or difficult to operate may be detected
+  - Disadvantages
+    - Users may think sw dev is easy & become inconsistent in expression of requirements
+    - Planning is not done at beginning of pj, which may lead to pj management problems: undefined
+      - deadlines
+      - budgets
+      - deliverables
+    - Leads to prolong SDP
+    - Developers tend to deliver a basic working prototype, rather than a real complete product
+
+- When to use
+
+  - sw requirements cannot be determined at time of pj initiation
+  - users (for various reasons) cannot express requirements clearly
+  - developing "look and feel" or UI
+    - because these features are difficult to describe by documentation, but obtained through trial use
+  - customers ask for proof of feasibility
+  - demos needed for senior management board
+  - technology problems need to be tried & tested
+
+## Spiral
+
+- Model
+
+  - based on a hybrid combination of iterative of Prototyping & sequential of Waterfall
+    - Focus on risk analysis
+  - Dev through a series of incremental releases
+    - In initial iterative steps of dev, versions can be simply sketched models on paper or prototypes
+    - In later iterative dev steps, increasingly mature versions are created
+
+- Advan & disadvan
+
+  - Advantages
+    - Focus on risk analysis, reduce risks in pjs
+    - Suitable for large & particularly important pjs
+    - New functions may be added later
+    - Initial versions of sw sys are created early
+  - Disadvantages
+    - High cost (time, resources, money) to apply
+    - Risk analysis requires high skills & experience
+    - success of pj depends strongly on risk analysis phase
+    - Not suitable for small pjs
+
+- When to use
+  - When assessment (analysis) of costs & risks is important
+  - For medium-high-risk pjs
+  - Users are uncertain about their needs
+  - Complex & large sw requirements
+  - Need to develop a new product line
+  - Desire for significant changes (careful research & investigation is required)
+
+## Agile
+
+- Model
+
+  - incremental & iterative
+  - Dev through incremental & rapid cycles
+  - Helps create small-scale enhanced versions
+    - where a next version is built on features of previous one
+  - Each enhanced version is carefully tested to ensure sw quality
+  - Used for sw dev pjs that require quick completion times
+    - Extreme Programming (XP) is one of famous methods belonging to agile model
+
+- Advan & disadvan
+
+  - Advantages
+    - Satisfy customers with agile enhanced sw versions
+    - Emphasis on interactions between actors rather than processes & tools (customers, developers, & testers constantly interact with each other)
+    - Frequent communication between business analysis & programming team
+    - Adapt (response) quickly to changing requests
+    - Even allowing changes of sw requirements are added later
+  - Disadvantages
+    - For large sw sys, this agile model makes it difficult to estimate necessary costs & effort at beginning of SDP
+    - Less emphasis on required design & documentation
+    - Usually only senior developers can make necessary decisions during dev
+      - not suitable for inexperienced developers, unless working in conjunction with experienced ones
+
+- When to use
+
+  - New changes can be implemented at low cost, by frequent creation of enhanced versions
+  - To implement a new feature, developers only need a few days, or even a few hours to implement
+  - Unlike waterfall, in agile, planning is (much) less cost
+  - assumes that user needs will (often) change
+  - Changes can always be requested & features can always be added or removed based on customer feedback
+  - Both developers & users of sys find they have more freedom of time & choices than models that strictly follow a sequence of steps (waterfall)
+
+## RUP
+
+- Rational Unified Process is a modeling process using modeling language UML
+
+### Basic principles
+
+- Iteration & incremental
+  - pj is divided into short loops or stages for easy control
+  - At end of each loop, executable part is produced in a gradually added
+- Focus on architecture
+
+  - complex sys is divided into modules for easy deployment & maintenance
+  - architecture is presented in 5 different views
+
+- Led by use cases
+
+  - Use cases influence every phase of sys dev, basis for
+    - defining loops & enhancement
+    - dividing work within team
+  - Needs understanding: Detect use cases
+  - Analysis: Dive into description (i.e., specification) of use cases
+  - Design & implementation: Build sys according to use cases
+  - sys testing & acceptance: Follow use cases
+
+- Control risks
+  - Early detect & eliminate risks to pj
+
+### Main phases
+
+- Inception
+  - Give an overview of sw sys (functions, performance, technology) & sw dev pj (scope, goals, feasibility)
+  - Conclusion of whether to develop or give up pj?
+- Elaboration
+  - More detailed analysis of sys (functions & static structures)
+  - Propose a sys architecture prototype
+- Construction
+  - Focus on sys design & implementation
+  - sys architecture is detailed & edited
+  - Finishes when a complete sys with accompanying technical documentation is created
+  - Take most time & effort
+- Transition
+  - Transfer sys to end users: data conversion, installation, testing, training
+
+### Main steps
 
 1. Preliminary study
 
-Give an overview of software sys (functions, performance,
-technology, ...) & software dev project (scope,
-goals, feasibility, etc.)
-Make conclusion: Whether to develop or give up project?
+   - like Inception
 
-2. Identify & describe use cases
+1. Identify & describe use cases
 
-Understand user needs & identify use cases
-Each use case must be specified (described) in form of a
-scenario and/or a sequence diagram
+   - Understand user needs & identify use cases
+   - Each use case must be specified (described) in form of a scenario and/or a sequence diagram
 
-3. Application domain modeling
+1. Application domain modeling
 
-Provide class diagrams that reflect all concepts & businesses
-The classes here are domain classes (not design classes)
-SAD
+   - Provide class diagrams that reflect all concepts & businesses
+   - classes here are domain classes (not design classes)
 
-35
+1. Define classes / objects involving in use cases
 
-Main steps of RUP (3) 4. Define classes/ objects involving in use cases
+   - For each use case, define entity, control, boundary classes
 
-For each use case, define entity classes, control classes,
-boundary classes
+1. Modeling interactions in use cases
 
-5. Modeling interactions in use cases
+   - Objects interact by exchanging messages
+   - Create use case scenarios: Sequence, Communication diagrams
 
-Objects interact by exchanging messages
-Create use case scenarios: Sequence diagrams, Communication
-diagrams
+1. Behavior modeling
 
-6. Behavior modeling
+   - Control objects have ability to react to events coming from outside
+   - Use state machine diagrams to describe behavior of control objects
 
-Control objects have ability to react to events coming from
-outside
-Use state machine diagrams to describe behavior of control
-objects
-SAD
+1. Create UI prototype
 
-36
+   - Use GUI design tools to create (design) interfaces prototype early, making sys’s modeling & implementation easier
 
-Main steps of RUP (4) 7. Create user interface prototype
+1. Design sys architecture
 
-Use graphical user interface (GUI) design tools to create (design)
-interfaces prototype early, making sys’s modeling and
-implementation easier
+   - Design sys’s overall architecture
+   - Divide into sub-sys
+   - Use component diagrams to describe physical components
+   - Use deployment diagrams to describe arrangement & deployment of sys's executable components to hardware & infrastructure platform
 
-8. Design sys architecture
+1. Detailed design
 
-Design sys’s overall architecture
-Divide into sub-syss
-Use component diagrams to describe physical components
-Use deployment diagrams to describe arrangement and
-deployment of sys's executable components to the
-hardware & infrastructure platform
+   - For classes, associations, properties, methods
+   - Determine sys’s implementation solution
 
-SAD
+1. Implementation
 
-37
+   - Programming & testing
+   - sys is approved (accepted) on use cases
 
-Main steps of RUP (5) 9. Detailed design
-Detailed design for classes, associations, properties,
-methods
-Determine sys’s implementation solution 10. Implementation
-Programming & testing
-The sys is approved (i.e., accepted) on use
-cases
+# Analysis of environment & needs
 
-SAD
+## Goal
 
-38
+- This is preliminary study step
+- Investigate & study about environment & business context of sys to be built
+- Identify functional & non-functional requirements, risks & constraints
+- pj definition & planning
+- Should we develop or give up pj?
 
-Support tools (1)
+## Method
 
-Support for sys dev programming
-(Integrated dev Environment – IDE)
+- Studying written materials
+  - Complete documents
+    - Transaction documents
+    - Archive documents (papers, files)
+    - Reporting documents (plan, statistics)
+  - Fill-in documents
+    - Inquiry documents (questionnaire, collection form)
+- Interviewing
+  - Interview with written materials to explain/add/check/update written information
+  - Interview without written materials: seminar, individual/group interview
+  - Survey form with open/closed questions
+- Observing
+  - Work execution process, Business document processing flow
+  - Count number of transactions, count processing time
 
-Write source codes, compile
-Debug, test
-Create interfaces prototype
+## Sys overview document
 
-Support for sys modeling
+- Aggregate studied & collected information into an overview report of sys
+- Each sys is always placed in a business environment
+  - At this stage, it is not possible to clearly determine boundary between sys to be built & environment
+- Describe operation of users, equipment & computers in a business environment
 
-Produce, transform, modify models & diagrams
-Check syntax of models
-Store & manage versions of models
-Test & evaluate models
-Simulate & execute models
-Generate models from existing source codes (i.e., reverse
-engineering)
-SAD
+- include
+  - Business goal
+  - Main tasks/main functions
+  - Business processes
+    - Should be described (presented) by activity diagrams
+  - Types of information used in sys
+  - Requirements for sys to be built about
+    - functions
+    - quality, performance
+    - priorities, restrictions, constraints
 
-39
+## Pj planning
 
-Support tools (2)
-
-Support management of sys dev
-process & project
-
-Guide & support, specify work & deliverables (i.e.,
-outputs) at each stage
-Support iterative process
-Support teamwork
-Assist in project management, planning & monitoring
-
-SAD
-
-40
-
-sys Analysis and
-Design
-(IT3120E)
-
-Content:
-
-intro of OO SAD
-
-intro of modeling language UML
-
-intro of SDP
-
-Analysis of environment & needs
-
-Function analysis
-
-Structure analysis
-
-Interaction analysis
-
-Behavior analysis
-
-Design of sys’s overall architecture
-
-Class detail design
-
-User interface design
-
-Data design
-
-SAD
-
-2
-
-Analysis of environment & needs
-
-Goal of analysis
-
-Method of analysis
-
-Create sys overview document
-
-Project planning
-
-SAD
-
-3
-
-Goal of analysis
-This is preliminary study step
-Investigate & study about environment and
-business context of sys to be built
-Identify functional & non-functional requirements, risks
-and constraints
-Project definition & planning
-Question to be answered: “Should we develop or give up
-the project?"
-
-SAD
-
-4
-
-Method of analysis (1)
-Investigate, survey in several different ways:
-
-Studying written materials
-
-Complete documents
-Transaction documents
-Archive documents (papers, files)
-Reporting documents (plan, statistics)
-
-Fill-in documents
-Inquiry documents (questionnaire, collection form)
-
-SAD
-
-5
-
-Method of analysis (2)
-
-Interviewing
-
-Interview with written materials to
-explain/add/check/update written information
-Interview without written materials: seminar,
-individual/group interview
-Survey form with open/closed questions
-
-Observing
-
-Work execution process, Business document processing
-flow, etc.
-Count number of transactions, count processing
-time, etc.
-SAD
-
-6
-
-Create sys overview document (1)
-
-Aggregate studied & collected information into an
-overview report of sys
-
-Each sys is always placed in a business
-environment. At this stage, it is not possible to clearly
-determine boundary between sys to be built
-and environment
-
-Describe operation of users, equipment and
-computers in a business environment
-
-SAD
-
-7
-
-Create sys overview document (2)
-
-The sys overview document should include:
-Business goal
-Main tasks/main functions
-Business processes
-
-Should be described (presented) by activity diagrams
-
-Types of information used in sys
-Requirements for sys to be built:
-
-About functions,
-About quality, performance, etc.
-About priorities, restrictions, constraints
-
-SAD
-
-8
-
-Project planning
-
-Define scope & limitations of project
-
-Define goals & priorities of project
-
-Propose a solution (at a general/preliminary level) and
-demonstrate its feasibility
-
-Anticipate & assess risks (e.g., misunderstanding
-needs, outdated technology, limited human resources
-and experience, limited time to complete, etc.)
-
-Create project’s implementation plan (human
-resource, finance, timetable, considering risks, etc.)
-
-SAD
-
-9
-
-sys Analysis and
-Design
-(IT3120E)
-
-Content:
-
-intro of OO SAD
-
-intro of modeling language UML
-
-intro of SDP
-
-Analysis of environment & needs
-
-Function analysis
-
-Structure analysis
-
-Interaction analysis
-
-Behavior analysis
-
-Design of sys’s overall architecture
-
-Class detail design
-
-User interface design
-
-Data design
-
-SAD
-
-2
-
-Function analysis
-
-Goal of function analysis
-
-Modeling business processes by activity diagrams
-
-Modeling functional requirements by use case diagrams
-
-Illustrative example exercise
-
-SAD
-
-3
-
-Goal of function analysis
+- Define
+  - scope & limitations
+  - goals & priorities
+- Propose a solution (at a general/preliminary level) & demonstrate its feasibility
+- Anticipate & assess risks
+  - misunderstanding needs
+  - outdated technology
+  - limited human resources & experience
+  - limited time to complete
+- Create implementation plan
+  - human resource
+  - finance
+  - timetable
+  - considering risks
+
+# Function analysis
+
+## Goal
 
 Give a preliminary look at sys's functionality
 
@@ -1240,7 +583,7 @@ Business processes
 Functional requirements
 
 Function analysis is only intended to show major
-functions (the sys’s requirements)
+functions (sys’s requirements)
 
 Without going further into minor functions
 
@@ -1255,7 +598,7 @@ Modeling business processes by activity diagrams (1)
 
 Goal of modeling business processes
 
-Usually, project will be started with a Preliminary Research
+Usually, pj will be started with a Preliminary Research
 step to understand Business Environment of sys to
 be built
 
@@ -1284,7 +627,7 @@ Modeling business processes by activity diagrams (2)
 Goal of modeling business processes (2)
 
 Activity Diagram is a diagram that describes activities following
-the flow from one activity to another
+flow from one activity to another
 
 Activity Diagram may be used to describe:
 A business process
@@ -1429,7 +772,7 @@ transition) between two activities.
 
 Example: following figure shows a sales process, where an
 object (“Đơn hàng”) has been created & changed state through
-the activities.
+activities.
 
 SAD
 
@@ -1456,7 +799,7 @@ functional requirements)
 
 Describe analysis results with UML use case diagrams
 
-The order of work is as follows:
+order of work is as follows:
 Modeling work environment of sys by actors
 Modeling requirements by use cases
 Determining relations (actors, use cases)
@@ -1473,11 +816,11 @@ Modeling work environment of sys by actors
 
 Actors is role of one or more users or external (i.e.,
 outside sys to be built) objects that interact with
-the sys
+sys
 
 Types of actors:
 
-Users vs. external syss/objects
+Users vs. external sys/objects
 
 Primary vs. secondary (a.k.a. supporting)
 
@@ -1600,7 +943,7 @@ If use case X always include content of use case Y into the
 content of X at a position (i.e., inclusion point) specified in the
 specification of X
 
-X (the use case at beginning of arrow) is called base
+X (use case at beginning of arrow) is called base
 use case
 
 Representation:
@@ -1625,7 +968,7 @@ If use case X conditionally include content of use case Y
 into content of X at a position (i.e., extension point) specified
 in specification of X
 
-X (the use case at end of arrow) is called base use
+X (use case at end of arrow) is called base use
 case
 
 Representation:
@@ -2043,7 +1386,7 @@ Design of sys’s overall architecture
 
 Class detail design
 
-User interface design
+UI design
 
 Data design
 
@@ -2103,15 +1446,15 @@ Definition of object & class (1)
 
 An object (in IT) is an abstract representation of a (physical
 or conceptual) entity that has a clear identity & boundary in
-the real world, including state & behavior of that entity,
+real world, including state & behavior of that entity,
 aiming at simulating or controlling that entity
 
-The state of an object is represented by a set of attributes. At a
+state of an object is represented by a set of attributes. At a
 time, each attribute of object has a certain value.
-The behavior of an object is represented by a set of operations,
+behavior of an object is represented by a set of operations,
 which are services it can perform when requested by another
 object.
-The identifier of an object is what distinguishes it from another
+identifier of an object is what distinguishes it from another
 
 SAD
 
@@ -2183,7 +1526,7 @@ Protected, denoted by '#', if attribute is only accessible from
 classes that inherit current class
 Package, denoted by '~', if attribute is accessible from
 classes belonging to same (i.e., most inner) package of
-the current class
+current class
 Public, denoted by '+', if attribute is accessible from any other
 class
 SAD
@@ -2272,7 +1615,7 @@ Direction may be either of in, out, inout or return
 depending on parameter is: may not be modified (in),
 may be modified to communicate information to caller
 (out), may be modified (inout), or to return result to
-the caller (return)
+caller (return)
 Default value is value to be used when the
 corresponding parameter is missing in call
 
@@ -2301,7 +1644,7 @@ Dependency relation (1)
 Dependency relation is used to express a (dependent)
 class that is affected by any changes in another
 (independent) one
-The opposite direction is not necessarily
+opposite direction is not necessarily
 
 Usually, dependent class needs to use the
 independent one to specify or implement it
@@ -2364,7 +1707,7 @@ SAD
 
 Generalization relation (2)
 
-The term “inheritance” is commonly used in
+term “inheritance” is commonly used in
 programming languages to describe a sub-class that has
 all attributes, operations, & relations described in
 its super-class
@@ -2394,7 +1737,7 @@ operations with only title (i.e., name) & without implementation
 
 Abstract operations must be redefined (i.e., overwritten) & implemented
 in sub-classes
-The name of abstract class & title of abstract operation must
+name of abstract class & title of abstract operation must
 be italicized & may include property string {abstract}
 
 Example: Animal is an abstract class generalized from classes
@@ -2484,7 +1827,7 @@ Role
 In an association between two classes, each class plays a
 different role
 
-The role name (with first letter in lowercase) can be appended
+role name (with first letter in lowercase) can be appended
 to each end of link (thus role is also called name of an
 association end)
 
@@ -2519,7 +1862,7 @@ Multiplicity
 
 Each end of association may also contain a multiplicity to indicate the
 (minimum & maximum) number of instances of that end participating in
-the association with one instance at other end
+association with one instance at other end
 
 Commonly used values of multiplicity:
 1
@@ -2569,12 +1912,12 @@ To reduce number of objects found, we can limit search area to
 
 These attributes are called qualifiers
 
-Such attribute is shown in a small box attached to end (the class)
+Such attribute is shown in a small box attached to end (class)
 of association, where navigation originates
 
 Thus, qualifier is applied to 1-to-many or many-to-many associations,
 to reduce from many to 1 (or 0..1), or to reduce from many to many (but
-the number is less)
+number is less)
 Bank
 
 bankName
@@ -2655,7 +1998,7 @@ University
 Example: Class Student (i.e., “part” class) has an
 aggregation association with class University (i.e., the
 “whole” class); & an object of class Student has
-the “study-at” relation with multiple objects of class
+“study-at” relation with multiple objects of class
 University
 SAD
 
@@ -2771,9 +2114,9 @@ To search for domain concepts, we rely on:
 
 Knowledge of business domain
 Interviews with users & business experts
-The document that describes an overview of sys and
+document that describes an overview of sys and
 needs
-The documents that describe use cases (created in the
+documents that describe use cases (created in the
 previous step of SDP)
 
 SAD
@@ -2813,7 +2156,7 @@ Name & assign responsibility
 Next is naming & assigning responsibility to each of the
 newly defined classes
 Responsibility describes role & use purpose of class, not
-the structure of that class
+structure of that class
 Although latter responsibility will allow us to define structure
 (i.e., properties & associations) & behavior (i.e.,
 operations) of class
@@ -2849,7 +2192,7 @@ complex), then you should split that class into several ones;
 
 Difficult to choose a reasonable name or describe the
 responsibility, then you should analyze more deeply to choose
-the appropriate representations
+appropriate representations
 SAD
 
 38
@@ -2875,11 +2218,11 @@ Determining associations & attributes (2)
 
 Example: From description of responsibility of the
 class "Student", we have:
-The sentence "Information needed to register and
+sentence "Information needed to register and
 calculate tuition fees for a student" help us infer some
 attributes such as name, student code, address, etc.
 of class “Student”
-The sentence "Student is a person who is allowed to
+sentence "Student is a person who is allowed to
 register to credit courses of a university" help us infer
 that there is an association between class
 “Student” & class “CreditCourse” with the
@@ -2891,7 +2234,7 @@ SAD
 Generalizing classes
 
 In order to optimize class representation model, we seek to extract
-the common parts between classes to form a more general class
+common parts between classes to form a more general class
 
 For example, classes “Student” & “Lecturer” have common
 attributes (e.g., name, id code, etc.) => We may need to define a more
@@ -2926,18 +2269,18 @@ SAD
 Goal of determining classes involving in use cases
 
 In previous step, we just studied domain, but not the
-current software application => classes determined are just
+current sw application => classes determined are just
 domain classes
 
-These domain classes are same for every software application of the
+These domain classes are same for every sw application of the
 domain!
 
-The specifics of a software application are in its use cases. So, to
-study current software application, we have to analyze the
+specifics of a sw application are in its use cases. So, to
+study current sw application, we have to analyze the
 structure & behavior of these use cases in depth.
 A use case is viewed as a collaboration of several objects, including
 domain classes & application-specific classes
-The purpose of this step is to analyze static structure of use
+purpose of this step is to analyze static structure of use
 cases. We will have to do following tasks:
 
 1. Determine classes involving in use cases
@@ -2949,11 +2292,11 @@ cases. We will have to do following tasks:
 
 Determining classes involving in use cases (1)
 
-The use cases are studied (analyzed) to determine the
+use cases are studied (analyzed) to determine the
 classes that participate in each of these use cases
 
-The classes that participate in use case are called
-the analysis classes, including 3 types:
+classes that participate in use case are called
+analysis classes, including 3 types:
 Boundary class
 Control class
 Entity class
@@ -2972,8 +2315,8 @@ between actors & sys:
 Typically, they represent screens for communicating with the
 users, allowing information to be collected or results to be displayed
 
-They may also represent (hardware/software) interfaces between
-the sys & devices that it controls or collects information
+They may also represent (hardware/sw) interfaces between
+sys & devices that it controls or collects information
 
 For each pair of (actor, use case), there must be at least one
 boundary class
@@ -2995,8 +2338,8 @@ These are classes that manage & control progress in a
 use case, i.e., it is "engine" that makes use case progress
 Control classes contain business rules & are intermediate
 between boundary classes & entity classes, allowing from the
-screen (user interface) to manipulate information contained in
-the entity classes
+screen (UI) to manipulate information contained in
+entity classes
 For each use case, we need to create at least one control class
 A control class, when moved to design phase, is not
 necessarily going to exist as a real class, since its task can be
@@ -3038,11 +2381,11 @@ SAD
 Creating a class diagram for each use case (1)
 
 Goal & requirements:
-The ultimate goal of Step 4 in RUP process (i.e.,
+ultimate goal of Step 4 in RUP process (i.e.,
 Determine classes participating in use cases) is to
 draw a class diagram for each use case, to reflect the
 static structure of collaboration (between classes)
-The diagram of classes participating in use case
+diagram of classes participating in use case
 will be foundation on which interactions
 between classes take place, which we will explore in
 depth in next step
@@ -3053,16 +2396,16 @@ SAD
 
 Creating a class diagram for each use case (2)
 
-The diagram of classes participating in a use case
+diagram of classes participating in a use case
 must include all determined classes & the
 necessary structural elements (attributes, operations,
 associations) of each class
 
-The attributes must store enough information about the
+attributes must store enough information about the
 objects needed in collaboration
-The operations provide required service capabilities
+operations provide required service capabilities
 of each class engaging in collaboration
-The associations create links between classes,
+associations create links between classes,
 allowing them to know each other & communicate with
 each other in collaboration
 
@@ -3073,18 +2416,18 @@ SAD
 Creating a class diagram for each use case (3)
 
 Adding attributes & operations:
-The entity classes temporarily have only attributes. These
+entity classes temporarily have only attributes. These
 attributes describe persistent information of sys
-The control classes temporarily have only operations. These
+control classes temporarily have only operations. These
 operations represent business processing logics,
 business rules, & behaviors of sys
-The boundary classes have both attributes & operations:
+boundary classes have both attributes & operations:
 
-The attributes describe fields to collect information or to output
+attributes describe fields to collect information or to output
 results. results are distinguished by notation of derived
 attributes
 
-The operations represent actions that user performs on the
+operations represent actions that user performs on the
 interface screen
 SAD
 
